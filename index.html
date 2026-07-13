@@ -53,8 +53,9 @@ section{padding:var(--sp-120) 0}
   margin-bottom:var(--sp-24);
 }
 .display{
-  font-size:clamp(44px,7vw,96px);
-  font-weight:500;line-height:1.08;letter-spacing:-.03em;
+  /* 히어로 좌측 컬럼(~600px)에 가장 긴 줄(≈14.2em)이 한 줄로 들어가도록 상한 42px */
+  font-size:clamp(26px,3.2vw,42px);
+  font-weight:500;line-height:1.25;letter-spacing:-.02em;
   color:var(--color-bone-white);
   word-break:keep-all;
 }
@@ -316,6 +317,9 @@ footer{padding:var(--sp-36) 0 var(--sp-60)}
   section{padding:var(--sp-96) 0}
   .scroll-hint{display:none}
 }
+@media (max-width:430px){
+  .display{font-size:21px} /* 초소형 화면에서도 2줄 유지 */
+}
 @media (prefers-reduced-motion:reduce){
   .reveal{opacity:1;transform:none;transition:none}
 }
@@ -358,11 +362,10 @@ footer{padding:var(--sp-36) 0 var(--sp-60)}
   <div class="wrap hero-grid">
     <div>
       <span class="label reveal">DirectX 12 · C# Server · GPU-Driven Rendering</span>
-      <h1 class="display reveal" data-i18n="hero_title">렌더링 파이프라인을<br>바닥부터 이해하는<br>프로그래머</h1>
+      <h1 class="display reveal" data-i18n="hero_title">렌더링 파이프라인을<br>바닥부터 이해하는 프로그래머</h1>
       <p class="body-copy reveal" data-i18n="hero_body">상용 엔진에 기대지 않고 <strong>DirectX 9/12로 자체 엔진을 구축</strong>했습니다. 엔진이 지원하지 않으면 <strong>직접 만들어서</strong> 해결합니다 — GPU-Driven Rendering부터 C# 서버 통신, CI/CD 자동화까지.</p>
       <div class="hero-cta reveal">
-        <a class="btn-pill" href="https://kangyh04.github.io/resume/" target="_blank" rel="noopener" data-i18n="hero_cta1">이력서 보기</a>
-        <a class="ghost-link" href="#projects" data-i18n="hero_cta2">프로젝트 보기 ↓</a>
+        <a class="btn-pill" href="#projects" data-i18n="hero_cta2">프로젝트 보기 ↓</a>
       </div>
     </div>
     <div class="constellation reveal">
@@ -804,7 +807,7 @@ ko: {
   doc_title:'강영휘 | 그래픽스 & 엔진 프로그래머 포트폴리오',
   nav_role:'Graphics & Engine Programmer',
   nav_about:'소개', nav_proj:'프로젝트', nav_skill:'핵심 역량', nav_career:'경력', nav_resume:'이력서',
-  hero_title:'렌더링 파이프라인을<br>바닥부터 이해하는<br>프로그래머',
+  hero_title:'렌더링 파이프라인을<br>바닥부터 이해하는 프로그래머',
   hero_body:'상용 엔진에 기대지 않고 <strong>DirectX 9/12로 자체 엔진을 구축</strong>했습니다. 엔진이 지원하지 않으면 <strong>직접 만들어서</strong> 해결합니다 — GPU-Driven Rendering부터 C# 서버 통신, CI/CD 자동화까지.',
   hero_cta1:'이력서 보기', hero_cta2:'프로젝트 보기 ↓',
   s1_label:'01. 소개',
@@ -909,7 +912,7 @@ en: {
   doc_title:'Younghui Khang | Graphics & Engine Programmer Portfolio',
   nav_role:'Graphics & Engine Programmer',
   nav_about:'About', nav_proj:'Projects', nav_skill:'Skills', nav_career:'Career', nav_resume:'Resume',
-  hero_title:'A programmer who<br>understands the rendering<br>pipeline from the ground up',
+  hero_title:'Rendering pipelines,<br>understood from the ground up',
   hero_body:'I built <strong>my own engine with DirectX 9/12</strong> instead of leaning on commercial engines. When an engine lacks a feature, <strong>I build it myself</strong> — from GPU-Driven Rendering to C# server communication and CI/CD automation.',
   hero_cta1:'View Resume', hero_cta2:'View Projects ↓',
   s1_label:'01. About',
@@ -1014,7 +1017,7 @@ ja: {
   doc_title:'カン・ヨンフィ | グラフィックス＆エンジンプログラマー ポートフォリオ',
   nav_role:'Graphics & Engine Programmer',
   nav_about:'紹介', nav_proj:'プロジェクト', nav_skill:'コアスキル', nav_career:'職歴', nav_resume:'履歴書',
-  hero_title:'レンダリングパイプラインを<br>根本から理解する<br>プログラマー',
+  hero_title:'レンダリングパイプラインを<br>根本から理解するプログラマー',
   hero_body:'商用エンジンに頼らず、<strong>DirectX 9/12で自作エンジンを構築</strong>しました。エンジンが対応していなければ、<strong>自分で作って</strong>解決します — GPU-Driven RenderingからC#サーバー通信、CI/CD自動化まで。',
   hero_cta1:'履歴書を見る', hero_cta2:'プロジェクトを見る ↓',
   s1_label:'01. 紹介',
