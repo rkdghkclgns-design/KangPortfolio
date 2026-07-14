@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title data-i18n="doc_title">강영휘 | 그래픽스 &amp; 엔진 프로그래머 포트폴리오</title>
-<meta name="description" content="DirectX 12 · C# Server · GPU-Driven Rendering — 렌더링 파이프라인을 바닥부터 이해하는 프로그래머 강영휘의 포트폴리오">
+<title data-i18n="doc_title">강영휘 | 툴·파이프라인 엔진 프로그래머 포트폴리오</title>
+<meta name="description" content="기획자용 툴과 CI/CD 파이프라인을 만들어온 엔진 프로그래머 — DirectX 12 GPU-Driven Rendering으로 렌더링 확장 중. 강영휘 포트폴리오">
 <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
 <link rel="stylesheet" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable-jp/pretendardvariable-jp-dynamic-subset.min.css">
 <style>
@@ -235,6 +235,7 @@ section .wrap > .sec-head{
   font-size:12px;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
   color:var(--color-ash-gray);
 }
+.sec-head + .sub-divider{margin-top:0}
 
 /* ---------- 03 핵심 역량 ---------- */
 .skill-row{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-36)}
@@ -340,7 +341,7 @@ footer{padding:var(--sp-36) 0 var(--sp-60)}
         <path d="M11 1 L21 20 L1 20 Z" stroke="url(#lg)" stroke-width="2" fill="none"/>
       </svg>
       <span class="word">Younghui Khang</span>
-      <span class="role" data-i18n="nav_role">Graphics &amp; Engine Programmer</span>
+      <span class="role" data-i18n="nav_role">Tools &amp; Engine Programmer</span>
     </a>
     <div class="nav-links">
       <a href="#about" data-i18n="nav_about">소개</a>
@@ -361,9 +362,9 @@ footer{padding:var(--sp-36) 0 var(--sp-60)}
 <header class="hero" id="top">
   <div class="wrap hero-grid">
     <div>
-      <span class="label reveal">DirectX 12 · C# Server · GPU-Driven Rendering</span>
-      <h1 class="display reveal" data-i18n="hero_title">렌더링 파이프라인을<br>바닥부터 이해하는 프로그래머</h1>
-      <p class="body-copy reveal" data-i18n="hero_body">상용 엔진에 기대지 않고 <strong>DirectX 9/12로 자체 엔진을 구축</strong>했습니다. 엔진이 지원하지 않으면 <strong>직접 만들어서</strong> 해결합니다 — GPU-Driven Rendering부터 C# 서버 통신, CI/CD 자동화까지.</p>
+      <span class="label reveal">Engine Tools · Pipeline · DirectX 12</span>
+      <h1 class="display reveal" data-i18n="hero_title">엔진이 지원하지 않으면<br>직접 만드는 프로그래머</h1>
+      <p class="body-copy reveal" data-i18n="hero_body">기획자용 악보 에디터, Shadow Baking Tool, 2D→3D 자동 변환, Jenkins CI/CD — <strong>팀의 파이프라인을 만들어온 툴·엔진 프로그래머</strong>입니다. UE4 미지원 런타임 FBX도 직접 구현했고, 지금은 <strong>DirectX 12 GPU-Driven Rendering으로 렌더링을 확장 중</strong>입니다.</p>
       <div class="hero-cta reveal">
         <a class="btn-pill" href="#projects" data-i18n="hero_cta2">프로젝트 보기 ↓</a>
       </div>
@@ -380,8 +381,8 @@ footer{padding:var(--sp-36) 0 var(--sp-60)}
   <div class="wrap">
     <div class="sec-head">
       <span class="label reveal" data-i18n="s1_label">01. 소개</span>
-      <h2 class="h-lg reveal" data-i18n="s1_title">깊이로 증명하는<br>그래픽스 프로그래밍</h2>
-      <p class="body-copy reveal" data-i18n="s1_desc">API 호출을 아는 것과 파이프라인을 이해하는 것은 다릅니다. 저는 후자를 선택했습니다.</p>
+      <h2 class="h-lg reveal" data-i18n="s1_title">팀 전체를 빠르게 만드는<br>엔진 프로그래밍</h2>
+      <p class="body-copy reveal" data-i18n="s1_desc">혼자 빠른 코드보다, 팀을 빠르게 만드는 도구를 선택했습니다. 렌더링은 지금 확장 중인 다음 무기입니다.</p>
     </div>
 
     <div class="big-line reveal">
@@ -391,14 +392,14 @@ footer{padding:var(--sp-36) 0 var(--sp-60)}
       <span class="big-word spark">GPU</span>
       <span class="big-join" data-i18n="bl_post">로</span>
     </div>
-    <p class="body-copy phil-copy reveal" data-i18n="s1_phil">160개 풀잎의 물리 시뮬레이션을 전부 GPU로 옮겨 <em>CPU 부하 0%</em>를 달성했습니다. 렌더링 파이프라인을 바닥부터 이해하기에 가능한 최적화 — 병목이 어디에 있는지 알고, 연산을 가장 알맞은 자리로 옮기는 것.</p>
-    <p class="phil-quote reveal" data-i18n="s1_quote">엔진이 지원하지 않으면, 직접 만듭니다.</p>
+    <p class="body-copy phil-copy reveal" data-i18n="s1_phil">렌더링 확장의 증명 — 160개 풀잎의 물리 시뮬레이션을 전부 GPU로 옮겨 <em>CPU 부하 0%</em>를 달성했습니다. 툴을 만들며 익힌 파이프라인 감각이 렌더링에서도 통한다는 증거입니다.</p>
+    <p class="phil-quote reveal" data-i18n="s1_quote">도구가 좋아지면, 팀 전체가 빨라집니다.</p>
 
     <div class="stat-row">
       <div class="stat reveal">
-        <div class="v">0%</div>
-        <div class="k" data-i18n="stat1_k">CPU 부하</div>
-        <div class="s" data-i18n="stat1_s">GPU Compute Shader 물리 시뮬레이션 — 모든 연산을 GPU에서 처리</div>
+        <div class="v">50%+</div>
+        <div class="k" data-i18n="stat1_k">제작 시간 단축</div>
+        <div class="s" data-i18n="stat1_s">기획자용 악보 에디터 툴 — Unity 왕복 없이 툴 안에서 제작·테스트</div>
       </div>
       <div class="stat reveal">
         <div class="v" data-i18n="stat2_v">9년+</div>
@@ -407,8 +408,8 @@ footer{padding:var(--sp-36) 0 var(--sp-60)}
       </div>
       <div class="stat reveal">
         <div class="v">A–Z</div>
-        <div class="k" data-i18n="stat3_k">엔진 전체 이해</div>
-        <div class="s" data-i18n="stat3_s">렌더링 · 애니메이션 · 툴 · 빌드 자동화까지 파이프라인 전 구간 직접 구축</div>
+        <div class="k" data-i18n="stat3_k">파이프라인 전 구간</div>
+        <div class="s" data-i18n="stat3_s">에디터 툴부터 빌드 자동화, 서버 통신까지 직접 구축</div>
       </div>
     </div>
   </div>
@@ -420,8 +421,86 @@ footer{padding:var(--sp-36) 0 var(--sp-60)}
     <div class="sec-head">
       <span class="label reveal" data-i18n="s2_label">02. 프로젝트</span>
       <h2 class="h-lg reveal" data-i18n="s2_title">실전으로 증명한<br>결과물</h2>
-      <p class="body-copy reveal" data-i18n="s2_desc">그래픽스 · 엔진 · 툴 개발 결과물입니다. 영상과 소스코드로 직접 확인하세요.</p>
+      <p class="body-copy reveal" data-i18n="s2_desc">팀 생산성을 만든 상용 툴·파이프라인 실적과, 렌더링 확장을 증명하는 개인 프로젝트입니다. 영상과 소스코드로 직접 확인하세요.</p>
     </div>
+
+    <h3 class="sub-divider reveal" data-i18n="sub_commercial">상용 프로젝트 — 툴 · 파이프라인 실적</h3>
+
+    <!-- Offima -->
+    <div class="proj reveal">
+      <div class="media">
+        <div class="video"><iframe src="https://www.youtube.com/embed/51zqNpP29mc" title="Offima" allowfullscreen loading="lazy"></iframe></div>
+      </div>
+      <div>
+        <span class="meta-label" data-i18n="p_off_meta">Third Wave (일본) · 프리랜서 · 2019–2020</span>
+        <h3 data-i18n="p_off_title">Offima — 인테리어 3D 시뮬레이션</h3>
+        <div class="tags">Unreal Engine 4 · C++ · Python · Jenkins</div>
+        <ul class="points">
+          <li data-i18n="p_off_b1"><strong>런타임 FBX Import/Export 자체 개발</strong> — UE4 미지원 기능 구현</li>
+          <li data-i18n="p_off_b2"><strong>2D 도면 → 3D 자동 변환</strong> 파이프라인 (작업 시간 약 <em>30% 단축</em>)</li>
+          <li data-i18n="p_off_b3">Jenkins CI/CD 구축 — 빌드/배포 완전 자동화 + Slack 알림 통합</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- B-Project -->
+    <div class="proj flip reveal">
+      <div class="media">
+        <div class="video"><iframe src="https://www.youtube.com/embed/xRfRs8EhL2A" title="B-Project" allowfullscreen loading="lazy"></iframe></div>
+      </div>
+      <div>
+        <span class="meta-label" data-i18n="p_bp_meta">Mages Lab (일본) · Dropseed / 프리랜서</span>
+        <h3 data-i18n="p_bp_title">B-Project — 모바일 리듬 게임</h3>
+        <div class="tags">Unity · C# · HLSL · CriWare</div>
+        <ul class="points">
+          <li data-i18n="p_bp_b1"><strong>악보 에디터 툴 개발</strong> — 기획자가 직접 쓰는 비주얼 에디터 + 실시간 프리뷰</li>
+          <li data-i18n="p_bp_b2">악보 제작 시간 <em>50% 이상 단축</em> (Unity 왕복 디버그 → 툴 내 제작·테스트)</li>
+          <li data-i18n="p_bp_b3">CriWare 미들웨어 커스터마이징, OutGame 시스템 전체 설계</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Odin -->
+    <div class="proj reveal">
+      <div class="media">
+        <div class="video"><iframe src="https://www.youtube.com/embed/0by-wL74D8g" title="Gestalt Odin" allowfullscreen loading="lazy"></iframe></div>
+      </div>
+      <div>
+        <span class="meta-label" data-i18n="p_odin_meta">Aiming (일본) · 2016–2017</span>
+        <h3 data-i18n="p_odin_title">게슈탈트오딘 — 3D MORPG</h3>
+        <div class="tags">Unity · C# · HLSL · NGUI</div>
+        <ul class="points">
+          <li data-i18n="p_odin_b1"><strong>Shadow Baking Tool 개발</strong> — 런타임 연산 제거로 <em>FPS 30% 향상</em></li>
+          <li data-i18n="p_odin_b2">NGUI 기반 재사용 가능한 UI 프레임워크 설계</li>
+          <li data-i18n="p_odin_b3">다익스트라 기반 내비게이션 + Auto Play 기능 구현</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Etc -->
+    <div class="proj flip reveal">
+      <div class="media">
+        <div class="video" style="padding-bottom:0;height:auto;position:static">
+          <div style="border-radius:24px;overflow:hidden;background:#0a0a0a;padding:48px;text-align:center">
+            <div style="font-size:64px;font-weight:400;letter-spacing:-.04em;color:#8052ff">gRPC</div>
+            <div style="font-size:13px;font-weight:600;letter-spacing:.35px;text-transform:uppercase;color:#9a9a9a;margin-top:8px" data-i18n="p_etc_visual">C# 서버 실시간 통신</div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <span class="meta-label" data-i18n="p_etc_meta">프리랜서 · 일본 게임/SaaS 기업</span>
+        <h3 data-i18n="p_etc_title">그 외 라이브 프로젝트</h3>
+        <div class="tags">Unity · C# Server · gRPC · WebSocket</div>
+        <ul class="points">
+          <li data-i18n="p_etc_b1"><strong>MetaMahjong (온라인 마작):</strong> C# 서버 — <em>gRPC 통신 · WebSocket 통합</em></li>
+          <li data-i18n="p_etc_b2"><strong>CordGem (JRPG):</strong> 배틀 시스템 · HLSL 셰이더 · FSM AI 개발</li>
+          <li data-i18n="p_etc_b3"><strong>Friya:</strong> 육각형 타일 시스템 · Unity 미지원 3D Sprite 자체 구현</li>
+          <li data-i18n="p_etc_b4"><strong>마치가이 브레이크:</strong> NGUI UI · 정답률 시각화 셰이더</li>
+        </ul>
+      </div>
+    </div>
+
+    <h3 class="sub-divider reveal" data-i18n="sub_personal">개인 프로젝트 — 렌더링 · 엔진 확장</h3>
 
     <!-- Grass -->
     <div class="proj reveal">
@@ -562,81 +641,6 @@ footer{padding:var(--sp-36) 0 var(--sp-60)}
       </div>
     </div>
 
-    <h3 class="sub-divider reveal" data-i18n="sub_commercial">상용 프로젝트</h3>
-
-    <!-- Offima -->
-    <div class="proj reveal">
-      <div class="media">
-        <div class="video"><iframe src="https://www.youtube.com/embed/51zqNpP29mc" title="Offima" allowfullscreen loading="lazy"></iframe></div>
-      </div>
-      <div>
-        <span class="meta-label" data-i18n="p_off_meta">Third Wave (일본) · 프리랜서 · 2019–2020</span>
-        <h3 data-i18n="p_off_title">Offima — 인테리어 3D 시뮬레이션</h3>
-        <div class="tags">Unreal Engine 4 · C++ · Python · Jenkins</div>
-        <ul class="points">
-          <li data-i18n="p_off_b1"><strong>런타임 FBX Import/Export 자체 개발</strong> — UE4 미지원 기능 구현</li>
-          <li data-i18n="p_off_b2"><strong>2D 도면 → 3D 자동 변환</strong> 파이프라인 (작업 시간 약 <em>30% 단축</em>)</li>
-          <li data-i18n="p_off_b3">Jenkins CI/CD 구축 — 빌드/배포 완전 자동화 + Slack 알림 통합</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- B-Project -->
-    <div class="proj flip reveal">
-      <div class="media">
-        <div class="video"><iframe src="https://www.youtube.com/embed/xRfRs8EhL2A" title="B-Project" allowfullscreen loading="lazy"></iframe></div>
-      </div>
-      <div>
-        <span class="meta-label" data-i18n="p_bp_meta">Mages Lab (일본) · Dropseed / 프리랜서</span>
-        <h3 data-i18n="p_bp_title">B-Project — 모바일 리듬 게임</h3>
-        <div class="tags">Unity · C# · HLSL · CriWare</div>
-        <ul class="points">
-          <li data-i18n="p_bp_b1"><strong>악보 에디터 툴 개발</strong> — 기획자가 직접 쓰는 비주얼 에디터 + 실시간 프리뷰</li>
-          <li data-i18n="p_bp_b2">악보 제작 시간 <em>50% 이상 단축</em> (Unity 왕복 디버그 → 툴 내 제작·테스트)</li>
-          <li data-i18n="p_bp_b3">CriWare 미들웨어 커스터마이징, OutGame 시스템 전체 설계</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Odin -->
-    <div class="proj reveal">
-      <div class="media">
-        <div class="video"><iframe src="https://www.youtube.com/embed/0by-wL74D8g" title="Gestalt Odin" allowfullscreen loading="lazy"></iframe></div>
-      </div>
-      <div>
-        <span class="meta-label" data-i18n="p_odin_meta">Aiming (일본) · 2016–2017</span>
-        <h3 data-i18n="p_odin_title">게슈탈트오딘 — 3D MORPG</h3>
-        <div class="tags">Unity · C# · HLSL · NGUI</div>
-        <ul class="points">
-          <li data-i18n="p_odin_b1"><strong>Shadow Baking Tool 개발</strong> — 런타임 연산 제거로 <em>FPS 30% 향상</em></li>
-          <li data-i18n="p_odin_b2">NGUI 기반 재사용 가능한 UI 프레임워크 설계</li>
-          <li data-i18n="p_odin_b3">다익스트라 기반 내비게이션 + Auto Play 기능 구현</li>
-        </ul>
-      </div>
-    </div>
-
-    <!-- Etc -->
-    <div class="proj flip reveal">
-      <div class="media">
-        <div class="video" style="padding-bottom:0;height:auto;position:static">
-          <div style="border-radius:24px;overflow:hidden;background:#0a0a0a;padding:48px;text-align:center">
-            <div style="font-size:64px;font-weight:400;letter-spacing:-.04em;color:#8052ff">gRPC</div>
-            <div style="font-size:13px;font-weight:600;letter-spacing:.35px;text-transform:uppercase;color:#9a9a9a;margin-top:8px" data-i18n="p_etc_visual">C# 서버 실시간 통신</div>
-          </div>
-        </div>
-      </div>
-      <div>
-        <span class="meta-label" data-i18n="p_etc_meta">프리랜서 · 일본 게임/SaaS 기업</span>
-        <h3 data-i18n="p_etc_title">그 외 라이브 프로젝트</h3>
-        <div class="tags">Unity · C# Server · gRPC · WebSocket</div>
-        <ul class="points">
-          <li data-i18n="p_etc_b1"><strong>MetaMahjong (온라인 마작):</strong> C# 서버 — <em>gRPC 통신 · WebSocket 통합</em></li>
-          <li data-i18n="p_etc_b2"><strong>CordGem (JRPG):</strong> 배틀 시스템 · HLSL 셰이더 · FSM AI 개발</li>
-          <li data-i18n="p_etc_b3"><strong>Friya:</strong> 육각형 타일 시스템 · Unity 미지원 3D Sprite 자체 구현</li>
-          <li data-i18n="p_etc_b4"><strong>마치가이 브레이크:</strong> NGUI UI · 정답률 시각화 셰이더</li>
-        </ul>
-      </div>
-    </div>
   </div>
 </section>
 
@@ -651,8 +655,24 @@ footer{padding:var(--sp-36) 0 var(--sp-60)}
 
     <div class="skill-row">
       <div class="skill reveal">
+        <h3>Tools · C# Server · DevOps</h3>
+        <p class="d" data-i18n="sk3_d">기획자용 툴부터 C# 서버, CI/CD까지 — 팀 생산성을 끌어올리는 파이프라인 역량</p>
+        <div class="tags">C# Server · gRPC · WebSocket · Jenkins · Python</div>
+        <div class="exp-label" data-i18n="sk_exp3">실무 적용 경험</div>
+        <ul class="exp">
+          <li data-i18n="sk3_e1">온라인 마작 C# 서버 — gRPC/WebSocket 실시간 통신</li>
+          <li data-i18n="sk3_e2">악보 에디터 툴 개발 (기획자 직접 사용)</li>
+          <li data-i18n="sk3_e3">Jenkins CI/CD 빌드/배포 완전 자동화</li>
+        </ul>
+        <div class="nums">
+          <div class="row"><span class="v">50%+</span><span class="k" data-i18n="sk3_n1">악보 제작 시간 단축</span></div>
+          <div class="row"><span class="v" data-i18n="sk3_n2v">0분</span><span class="k" data-i18n="sk3_n2">빌드 자동화 후 개발자 대기 시간</span></div>
+        </div>
+      </div>
+
+      <div class="skill reveal">
         <h3>Graphics &amp; Rendering</h3>
-        <p class="d" data-i18n="sk1_d">렌더링 파이프라인을 바닥부터 설계하고 GPU를 한계까지 활용하는 역량</p>
+        <p class="d" data-i18n="sk1_d">DirectX 12를 독학하며 렌더링 영역으로 확장 중 — 학습이 아닌 결과물로 증명하는 성장 방향</p>
         <div class="tags">DirectX 9/12 · HLSL · GPU-Driven Rendering · Compute Shader · Geometry Shader</div>
         <div class="exp-label" data-i18n="sk_exp">실무 적용 경험</div>
         <ul class="exp">
@@ -679,22 +699,6 @@ footer{padding:var(--sp-36) 0 var(--sp-60)}
         <div class="nums">
           <div class="row"><span class="v">30%</span><span class="k" data-i18n="sk2_n1">Shadow Baking Tool로 FPS 향상</span></div>
           <div class="row"><span class="v">30%</span><span class="k" data-i18n="sk2_n2">도면 자동 변환으로 작업시간 단축</span></div>
-        </div>
-      </div>
-
-      <div class="skill reveal">
-        <h3>C# Server &amp; DevOps</h3>
-        <p class="d" data-i18n="sk3_d">C# 서버 통신부터 CI/CD까지, 팀 생산성을 끌어올리는 인프라 역량</p>
-        <div class="tags">C# Server · gRPC · WebSocket · Jenkins · Python</div>
-        <div class="exp-label" data-i18n="sk_exp3">실무 적용 경험</div>
-        <ul class="exp">
-          <li data-i18n="sk3_e1">온라인 마작 C# 서버 — gRPC/WebSocket 실시간 통신</li>
-          <li data-i18n="sk3_e2">악보 에디터 툴 개발 (기획자 직접 사용)</li>
-          <li data-i18n="sk3_e3">Jenkins CI/CD 빌드/배포 완전 자동화</li>
-        </ul>
-        <div class="nums">
-          <div class="row"><span class="v">50%+</span><span class="k" data-i18n="sk3_n1">악보 제작 시간 단축</span></div>
-          <div class="row"><span class="v" data-i18n="sk3_n2v">0분</span><span class="k" data-i18n="sk3_n2">빌드 자동화 후 개발자 대기 시간</span></div>
         </div>
       </div>
     </div>
@@ -795,7 +799,7 @@ footer{padding:var(--sp-36) 0 var(--sp-60)}
   <footer>
     <div class="wrap footer-inner">
       <span>© 2026 Younghui Khang. All rights reserved.</span>
-      <span>DirectX 12 · C# Server · GPU-Driven Rendering</span>
+      <span>Engine Tools · Pipeline · DirectX 12</span>
     </div>
   </footer>
 </section>
@@ -804,23 +808,23 @@ footer{padding:var(--sp-36) 0 var(--sp-60)}
 /* ================= i18n ================= */
 const I18N = {
 ko: {
-  doc_title:'강영휘 | 그래픽스 & 엔진 프로그래머 포트폴리오',
-  nav_role:'Graphics & Engine Programmer',
+  doc_title:'강영휘 | 툴·파이프라인 엔진 프로그래머 포트폴리오',
+  nav_role:'Tools & Engine Programmer',
   nav_about:'소개', nav_proj:'프로젝트', nav_skill:'핵심 역량', nav_career:'경력', nav_resume:'이력서',
-  hero_title:'렌더링 파이프라인을<br>바닥부터 이해하는 프로그래머',
-  hero_body:'상용 엔진에 기대지 않고 <strong>DirectX 9/12로 자체 엔진을 구축</strong>했습니다. 엔진이 지원하지 않으면 <strong>직접 만들어서</strong> 해결합니다 — GPU-Driven Rendering부터 C# 서버 통신, CI/CD 자동화까지.',
+  hero_title:'엔진이 지원하지 않으면<br>직접 만드는 프로그래머',
+  hero_body:'기획자용 악보 에디터, Shadow Baking Tool, 2D→3D 자동 변환, Jenkins CI/CD — <strong>팀의 파이프라인을 만들어온 툴·엔진 프로그래머</strong>입니다. UE4 미지원 런타임 FBX도 직접 구현했고, 지금은 <strong>DirectX 12 GPU-Driven Rendering으로 렌더링을 확장 중</strong>입니다.',
   hero_cta1:'이력서 보기', hero_cta2:'프로젝트 보기 ↓',
   s1_label:'01. 소개',
-  s1_title:'깊이로 증명하는<br>그래픽스 프로그래밍',
-  s1_desc:'API 호출을 아는 것과 파이프라인을 이해하는 것은 다릅니다. 저는 후자를 선택했습니다.',
+  s1_title:'팀 전체를 빠르게 만드는<br>엔진 프로그래밍',
+  s1_desc:'혼자 빠른 코드보다, 팀을 빠르게 만드는 도구를 선택했습니다. 렌더링은 지금 확장 중인 다음 무기입니다.',
   bl_pre:'', bl_mid:'에서', bl_post:'로',
-  s1_phil:'160개 풀잎의 물리 시뮬레이션을 전부 GPU로 옮겨 <em>CPU 부하 0%</em>를 달성했습니다. 렌더링 파이프라인을 바닥부터 이해하기에 가능한 최적화 — 병목이 어디에 있는지 알고, 연산을 가장 알맞은 자리로 옮기는 것.',
-  s1_quote:'엔진이 지원하지 않으면, 직접 만듭니다.',
-  stat1_k:'CPU 부하', stat1_s:'GPU Compute Shader 물리 시뮬레이션 — 모든 연산을 GPU에서 처리',
+  s1_phil:'렌더링 확장의 증명 — 160개 풀잎의 물리 시뮬레이션을 전부 GPU로 옮겨 <em>CPU 부하 0%</em>를 달성했습니다. 툴을 만들며 익힌 파이프라인 감각이 렌더링에서도 통한다는 증거입니다.',
+  s1_quote:'도구가 좋아지면, 팀 전체가 빨라집니다.',
+  stat1_k:'제작 시간 단축', stat1_s:'기획자용 악보 에디터 툴 — Unity 왕복 없이 툴 안에서 제작·테스트',
   stat2_v:'9년+', stat2_k:'실무 경력', stat2_s:'일본 게임업계 정사원 + 프리랜서 — 게임 · SaaS 프로젝트 다수 수행',
-  stat3_k:'엔진 전체 이해', stat3_s:'렌더링 · 애니메이션 · 툴 · 빌드 자동화까지 파이프라인 전 구간 직접 구축',
+  stat3_k:'파이프라인 전 구간', stat3_s:'에디터 툴부터 빌드 자동화, 서버 통신까지 직접 구축',
   s2_label:'02. 프로젝트', s2_title:'실전으로 증명한<br>결과물',
-  s2_desc:'그래픽스 · 엔진 · 툴 개발 결과물입니다. 영상과 소스코드로 직접 확인하세요.',
+  s2_desc:'팀 생산성을 만든 상용 툴·파이프라인 실적과, 렌더링 확장을 증명하는 개인 프로젝트입니다. 영상과 소스코드로 직접 확인하세요.',
   p_grass_meta:'개인 프로젝트 · 2025 · CPU 부하 0%', p_grass_title:'GPU 실시간 풀 애니메이션',
   p_grass_b1:'DirectX 12 Compute Shader로 <strong>160개 풀잎 동시 물리 시뮬레이션</strong>',
   p_grass_b2:'모든 연산을 GPU에서 처리해 <em>CPU 부하 0%</em> 달성',
@@ -849,7 +853,8 @@ ko: {
   p_kib_b2:'QuadTree + Frustum Culling 기반 대규모 지형 LOD 시스템',
   p_kib_b3:'자체 XML Parser로 DCC 툴 데이터 파이프라인 구축',
   p_kib_b4:'Skinned Mesh · 본 애니메이션 시스템 직접 구현',
-  sub_commercial:'상용 프로젝트',
+  sub_commercial:'상용 프로젝트 — 툴 · 파이프라인 실적',
+  sub_personal:'개인 프로젝트 — 렌더링 · 엔진 확장',
   p_off_meta:'Third Wave (일본) · 프리랜서 · 2019–2020', p_off_title:'Offima — 인테리어 3D 시뮬레이션',
   p_off_b1:'<strong>런타임 FBX Import/Export 자체 개발</strong> — UE4 미지원 기능 구현',
   p_off_b2:'<strong>2D 도면 → 3D 자동 변환</strong> 파이프라인 (작업 시간 약 <em>30% 단축</em>)',
@@ -869,7 +874,7 @@ ko: {
   p_etc_b4:'<strong>마치가이 브레이크:</strong> NGUI UI · 정답률 시각화 셰이더',
   s3_label:'03. 핵심 역량', s3_title:'깊이와 넓이를 갖춘<br>기술 스택',
   s3_desc:'추상적인 자신감이 아닌, 실제 결과물과 수치로 증명하는 역량입니다.',
-  sk1_d:'렌더링 파이프라인을 바닥부터 설계하고 GPU를 한계까지 활용하는 역량',
+  sk1_d:'DirectX 12를 독학하며 렌더링 영역으로 확장 중 — 학습이 아닌 결과물로 증명하는 성장 방향',
   sk_exp:'실무 적용 경험', sk_exp2:'실무 적용 경험', sk_exp3:'실무 적용 경험',
   sk1_e1:'DirectX 자체 엔진 라이브러리 구축',
   sk1_e2:'ExecuteIndirect 기반 GPU-Driven Rendering 구현',
@@ -880,7 +885,7 @@ ko: {
   sk2_e2:'Unity 미지원 3D Sprite 기능 구현',
   sk2_e3:'2D 도면 → 3D 자동 변환 시스템',
   sk2_n1:'Shadow Baking Tool로 FPS 향상', sk2_n2:'도면 자동 변환으로 작업시간 단축',
-  sk3_d:'C# 서버 통신부터 CI/CD까지, 팀 생산성을 끌어올리는 인프라 역량',
+  sk3_d:'기획자용 툴부터 C# 서버, CI/CD까지 — 팀 생산성을 끌어올리는 파이프라인 역량',
   sk3_e1:'온라인 마작 C# 서버 — gRPC/WebSocket 실시간 통신',
   sk3_e2:'악보 에디터 툴 개발 (기획자 직접 사용)',
   sk3_e3:'Jenkins CI/CD 빌드/배포 완전 자동화',
@@ -909,23 +914,23 @@ ko: {
   s5_lead:'새로운 프로젝트나 협업 제안은 언제나 환영입니다.'
 },
 en: {
-  doc_title:'Younghui Khang | Graphics & Engine Programmer Portfolio',
-  nav_role:'Graphics & Engine Programmer',
+  doc_title:'Younghui Khang | Tools & Pipeline Engine Programmer Portfolio',
+  nav_role:'Tools & Engine Programmer',
   nav_about:'About', nav_proj:'Projects', nav_skill:'Skills', nav_career:'Career', nav_resume:'Resume',
-  hero_title:'Rendering pipelines,<br>understood from the ground up',
-  hero_body:'I built <strong>my own engine with DirectX 9/12</strong> instead of leaning on commercial engines. When an engine lacks a feature, <strong>I build it myself</strong> — from GPU-Driven Rendering to C# server communication and CI/CD automation.',
+  hero_title:"If the engine can't do it,<br>I build it myself",
+  hero_body:'A score editor for designers, Shadow Baking Tool, 2D→3D auto-conversion, Jenkins CI/CD — <strong>a tools &amp; engine programmer who builds the team\'s pipeline</strong>. I implemented runtime FBX that UE4 does not support, and I am now <strong>expanding into rendering with DirectX 12 GPU-Driven Rendering</strong>.',
   hero_cta1:'View Resume', hero_cta2:'View Projects ↓',
   s1_label:'01. About',
-  s1_title:'Graphics programming<br>proven by depth',
-  s1_desc:'Knowing API calls and understanding the pipeline are different things. I chose the latter.',
+  s1_title:'Engine programming that<br>makes the whole team faster',
+  s1_desc:'I chose tools that speed up the team over code that only speeds up me. Rendering is the next weapon I am building.',
   bl_pre:'From', bl_mid:'to', bl_post:'',
-  s1_phil:'I moved the physics simulation of 160 grass blades entirely to the GPU, achieving <em>0% CPU load</em>. An optimization only possible by understanding the rendering pipeline from the ground up — knowing where the bottleneck is, and moving computation to where it belongs.',
-  s1_quote:"If the engine doesn't support it, I build it.",
-  stat1_k:'CPU Load', stat1_s:'GPU Compute Shader physics simulation — every computation runs on the GPU',
+  s1_phil:'Proof of the rendering expansion — I moved the physics simulation of 160 grass blades entirely to the GPU, achieving <em>0% CPU load</em>. The pipeline sense built from years of tooling works in rendering too.',
+  s1_quote:'Better tools make the whole team faster.',
+  stat1_k:'Production Time Saved', stat1_s:'Score editor tool for designers — create &amp; test in-tool, no Unity round-trips',
   stat2_v:'9+ yrs', stat2_k:'Industry Experience', stat2_s:'Full-time + freelance in the Japanese game industry — numerous game & SaaS projects',
-  stat3_k:'Full Engine Understanding', stat3_s:'Rendering, animation, tools, and build automation — built every stage of the pipeline myself',
+  stat3_k:'Pipeline Coverage', stat3_s:'Editor tools, build automation, and server communication — built end to end',
   s2_label:'02. Projects', s2_title:'Results proven<br>in practice',
-  s2_desc:'Graphics, engine, and tool development work. See for yourself through videos and source code.',
+  s2_desc:'Commercial tools &amp; pipeline work that made teams faster, and personal projects proving the rendering expansion. See for yourself through videos and source code.',
   p_grass_meta:'Personal Project · 2025 · 0% CPU Load', p_grass_title:'GPU Real-time Grass Animation',
   p_grass_b1:'<strong>Simultaneous physics simulation of 160 grass blades</strong> with DirectX 12 Compute Shader',
   p_grass_b2:'Achieved <em>0% CPU load</em> by processing all computation on the GPU',
@@ -954,7 +959,8 @@ en: {
   p_kib_b2:'Large-scale terrain LOD system with QuadTree + Frustum Culling',
   p_kib_b3:'Custom XML Parser for the DCC tool data pipeline',
   p_kib_b4:'Skinned mesh and bone animation systems implemented directly',
-  sub_commercial:'Commercial Projects',
+  sub_commercial:'Commercial — Tools &amp; Pipeline',
+  sub_personal:'Personal — Rendering &amp; Engine Expansion',
   p_off_meta:'Third Wave (Japan) · Freelance · 2019–2020', p_off_title:'Offima — Interior 3D Simulation',
   p_off_b1:'<strong>Self-developed runtime FBX Import/Export</strong> — a feature UE4 does not support',
   p_off_b2:'<strong>2D floor plan → 3D auto-conversion</strong> pipeline (about <em>30% less work time</em>)',
@@ -974,7 +980,7 @@ en: {
   p_etc_b4:'<strong>Machigai Break:</strong> NGUI UI · answer-rate visualization shader',
   s3_label:'03. Core Skills', s3_title:'A tech stack with<br>depth and breadth',
   s3_desc:'Not abstract confidence — skills proven by real results and numbers.',
-  sk1_d:'Designing rendering pipelines from the ground up and pushing the GPU to its limits',
+  sk1_d:'Expanding into rendering with self-taught DirectX 12 — proven by results, not courses',
   sk_exp:'Field Experience', sk_exp2:'Field Experience', sk_exp3:'Field Experience',
   sk1_e1:'Built an in-house DirectX engine library',
   sk1_e2:'GPU-Driven Rendering with ExecuteIndirect',
@@ -985,7 +991,7 @@ en: {
   sk2_e2:'Implemented 3D Sprite unsupported by Unity',
   sk2_e3:'2D floor plan → 3D auto-conversion system',
   sk2_n1:'FPS gain from Shadow Baking Tool', sk2_n2:'Work time saved by auto-conversion',
-  sk3_d:'From C# server communication to CI/CD — infrastructure that lifts team productivity',
+  sk3_d:'From designer tools to C# servers and CI/CD — pipeline skills that lift team productivity',
   sk3_e1:'Online mahjong C# server — gRPC/WebSocket real-time communication',
   sk3_e2:'Score editor tool (used directly by planners)',
   sk3_e3:'Fully automated Jenkins CI/CD build/deploy',
@@ -1014,23 +1020,23 @@ en: {
   s5_lead:'New projects and collaboration proposals are always welcome.'
 },
 ja: {
-  doc_title:'カン・ヨンフィ | グラフィックス＆エンジンプログラマー ポートフォリオ',
-  nav_role:'Graphics & Engine Programmer',
+  doc_title:'カン・ヨンフィ | ツール＆パイプライン エンジンプログラマー ポートフォリオ',
+  nav_role:'Tools & Engine Programmer',
   nav_about:'紹介', nav_proj:'プロジェクト', nav_skill:'コアスキル', nav_career:'職歴', nav_resume:'履歴書',
-  hero_title:'レンダリングパイプラインを<br>根本から理解するプログラマー',
-  hero_body:'商用エンジンに頼らず、<strong>DirectX 9/12で自作エンジンを構築</strong>しました。エンジンが対応していなければ、<strong>自分で作って</strong>解決します — GPU-Driven RenderingからC#サーバー通信、CI/CD自動化まで。',
+  hero_title:'エンジンが対応していなければ<br>自分で作るプログラマー',
+  hero_body:'企画者向け楽譜エディター、Shadow Baking Tool、2D→3D自動変換、Jenkins CI/CD — <strong>チームのパイプラインを作ってきたツール＆エンジンプログラマー</strong>です。UE4非対応のランタイムFBXも自ら実装し、現在は<strong>DirectX 12 GPU-Driven Renderingでレンダリングへ拡張中</strong>です。',
   hero_cta1:'履歴書を見る', hero_cta2:'プロジェクトを見る ↓',
   s1_label:'01. 紹介',
-  s1_title:'深さで証明する<br>グラフィックスプログラミング',
-  s1_desc:'API呼び出しを知ることと、パイプラインを理解することは違います。私は後者を選びました。',
+  s1_title:'チーム全体を速くする<br>エンジンプログラミング',
+  s1_desc:'自分だけ速いコードより、チームを速くするツールを選びました。レンダリングは今拡張中の次の武器です。',
   bl_pre:'', bl_mid:'から', bl_post:'へ',
-  s1_phil:'160枚の草の葉の物理シミュレーションをすべてGPUに移し、<em>CPU負荷0%</em>を達成しました。レンダリングパイプラインを根本から理解しているからこそ可能な最適化 — ボトルネックがどこにあるかを知り、演算を最適な場所へ移すこと。',
-  s1_quote:'エンジンが対応していなければ、自分で作ります。',
-  stat1_k:'CPU負荷', stat1_s:'GPU Compute Shader物理シミュレーション — すべての演算をGPUで処理',
+  s1_phil:'レンダリング拡張の証明 — 160枚の草の葉の物理シミュレーションをすべてGPUに移し、<em>CPU負荷0%</em>を達成。ツール開発で培ったパイプライン感覚がレンダリングでも通用する証拠です。',
+  s1_quote:'ツールが良くなれば、チーム全体が速くなります。',
+  stat1_k:'制作時間短縮', stat1_s:'企画者向け楽譜エディターツール — Unity往復なしでツール内制作・テスト',
   stat2_v:'9年+', stat2_k:'実務経験', stat2_s:'日本ゲーム業界の正社員＋フリーランス — ゲーム・SaaSプロジェクト多数',
-  stat3_k:'エンジン全体の理解', stat3_s:'レンダリング・アニメーション・ツール・ビルド自動化まで、パイプライン全区間を自ら構築',
+  stat3_k:'パイプライン全区間', stat3_s:'エディターツールからビルド自動化、サーバー通信まで自ら構築',
   s2_label:'02. プロジェクト', s2_title:'実戦で証明した<br>成果物',
-  s2_desc:'グラフィックス・エンジン・ツール開発の成果物です。映像とソースコードで直接ご確認ください。',
+  s2_desc:'チームの生産性を作った商用ツール・パイプライン実績と、レンダリング拡張を証明する個人プロジェクトです。映像とソースコードでご確認ください。',
   p_grass_meta:'個人プロジェクト · 2025 · CPU負荷0%', p_grass_title:'GPUリアルタイム草アニメーション',
   p_grass_b1:'DirectX 12 Compute Shaderで<strong>160枚の草の葉を同時に物理シミュレーション</strong>',
   p_grass_b2:'すべての演算をGPUで処理し、<em>CPU負荷0%</em>を達成',
@@ -1059,7 +1065,8 @@ ja: {
   p_kib_b2:'QuadTree＋Frustum Cullingによる大規模地形LODシステム',
   p_kib_b3:'自作XMLパーサーによるDCCツールのデータパイプライン構築',
   p_kib_b4:'Skinned Mesh・ボーンアニメーションシステムを直接実装',
-  sub_commercial:'商用プロジェクト',
+  sub_commercial:'商用プロジェクト — ツール・パイプライン実績',
+  sub_personal:'個人プロジェクト — レンダリング・エンジン拡張',
   p_off_meta:'Third Wave（日本）· フリーランス · 2019–2020', p_off_title:'Offima — インテリア3Dシミュレーション',
   p_off_b1:'<strong>ランタイムFBX Import/Exportを自社開発</strong> — UE4非対応機能を実装',
   p_off_b2:'<strong>2D図面 → 3D自動変換</strong>パイプライン（作業時間約<em>30%短縮</em>）',
@@ -1079,7 +1086,7 @@ ja: {
   p_etc_b4:'<strong>マチガイブレイク:</strong> NGUI UI・正答率可視化シェーダー',
   s3_label:'03. コアスキル', s3_title:'深さと広さを備えた<br>技術スタック',
   s3_desc:'抽象的な自信ではなく、実際の成果物と数値で証明するスキルです。',
-  sk1_d:'レンダリングパイプラインをゼロから設計し、GPUを限界まで活用する力',
+  sk1_d:'DirectX 12を独学しレンダリング領域へ拡張中 — 学習ではなく成果物で証明',
   sk_exp:'実務適用経験', sk_exp2:'実務適用経験', sk_exp3:'実務適用経験',
   sk1_e1:'DirectX自作エンジンライブラリの構築',
   sk1_e2:'ExecuteIndirectベースのGPU-Driven Rendering実装',
@@ -1090,7 +1097,7 @@ ja: {
   sk2_e2:'Unity非対応の3D Sprite機能を実装',
   sk2_e3:'2D図面 → 3D自動変換システム',
   sk2_n1:'Shadow Baking ToolによるFPS向上', sk2_n2:'図面自動変換による作業時間短縮',
-  sk3_d:'C#サーバー通信からCI/CDまで、チームの生産性を引き上げるインフラ力',
+  sk3_d:'企画者向けツールからC#サーバー、CI/CDまで — チーム生産性を引き上げるパイプライン力',
   sk3_e1:'オンライン麻雀C#サーバー — gRPC/WebSocketリアルタイム通信',
   sk3_e2:'楽譜エディターツール開発（企画者が直接使用）',
   sk3_e3:'Jenkins CI/CDビルド/デプロイ完全自動化',
